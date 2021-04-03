@@ -8,7 +8,7 @@ parameters:
 jobs:
   build:
     docker: 
-      - image: cimg/node
+      - image: cimg/node:14.10.1
     steps:
       - add_ssh_keys
       - run: node << pipeline.parameters.version-param >>
